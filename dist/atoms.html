@@ -98,6 +98,9 @@
 							<a href="molecules.html#dropdown">Dropdown</a>
 						</li>
 						<li>
+							<a href="molecules.html#form-subscribe">Form Subscribe</a>
+						</li>
+						<li>
 							<a href="molecules.html#pagination">Pagination</a>
 						</li>
 						<li>
@@ -110,6 +113,9 @@
 					<ul>
 						<li>
 							<a href="organisms.html#form">Form</a>
+						</li>
+						<li>
+							<a href="organisms.html#pagination">Pagination</a>
 						</li>
 						<li>
 							<a href="organisms.html#top-bar">Top Bar</a>
@@ -452,12 +458,100 @@
 		</div>
 	</div>
 <div class="f-item-preview">
-	<label for="textInput">Text input</label>
-<input type="text" id="textInput" />
+	<fieldset>
+	<div class="field-container">
+		<label for="text">Text Input <abbr title="Required">*</abbr>
+			<input id="text" type="text" placeholder="Text Input">
+		</label>
+	</div>
+	<div class="field-container">
+		<label for="password">Password</label>
+		<input id="password" type="password" placeholder="Type your Password" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
+	</div>
+	<div class="field-container">
+		<label for="webaddress">Web Address
+			<input id="webaddress" type="url" placeholder="http://yoursite.com">
+		</label>
+	</div>
+	<div class="field-container">
+		<label for="emailaddress">Email Address
+			<input id="emailaddress" type="email" placeholder="name@email.com">
+		</label>
+	</div>
+	<div class="field-container">
+		<label for="search">Search
+			<input id="search" type="search" placeholder="Enter Search Term">
+		</label>
+	</div>
+	<div class="field-container">
+		<label for="text">Number Input <abbr title="Required">*</abbr>
+			<input id="text" type="number" placeholder="Enter a Number" pattern="[0-9]*">
+		</label>
+	</div>
+	<div class="field-container">
+		<label for="textarea">Textarea
+			<textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+		</label>
+	</div>
+	<div class="field-container">
+		<label class="error">Error Input
+			<input class="is-error" type="text" placeholder="Text Input">
+		</label>
+	</div>
+	<div class="field-container">
+		<label class="valid">Valid
+			<input class="is-valid" type="text" placeholder="Text Input">
+		</label>
+	</div>
+</fieldset>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label for=&quot;textInput&quot;&gt;Text input&lt;/label&gt;
-&lt;input type=&quot;text&quot; id=&quot;textInput&quot; /&gt;</code></pre>
+	<pre><code class="language-markup">&lt;fieldset&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label for=&quot;text&quot;&gt;Text Input &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;
+			&lt;input id=&quot;text&quot; type=&quot;text&quot; placeholder=&quot;Text Input&quot;&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+		&lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Type your Password&quot; style=&quot;background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label for=&quot;webaddress&quot;&gt;Web Address
+			&lt;input id=&quot;webaddress&quot; type=&quot;url&quot; placeholder=&quot;http://yoursite.com&quot;&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label for=&quot;emailaddress&quot;&gt;Email Address
+			&lt;input id=&quot;emailaddress&quot; type=&quot;email&quot; placeholder=&quot;name@email.com&quot;&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label for=&quot;search&quot;&gt;Search
+			&lt;input id=&quot;search&quot; type=&quot;search&quot; placeholder=&quot;Enter Search Term&quot;&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label for=&quot;text&quot;&gt;Number Input &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;
+			&lt;input id=&quot;text&quot; type=&quot;number&quot; placeholder=&quot;Enter a Number&quot; pattern=&quot;[0-9]*&quot;&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label for=&quot;textarea&quot;&gt;Textarea
+			&lt;textarea id=&quot;textarea&quot; rows=&quot;8&quot; cols=&quot;48&quot; placeholder=&quot;Enter your message here&quot;&gt;&lt;/textarea&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label class=&quot;error&quot;&gt;Error Input
+			&lt;input class=&quot;is-error&quot; type=&quot;text&quot; placeholder=&quot;Text Input&quot;&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label class=&quot;valid&quot;&gt;Valid
+			&lt;input class=&quot;is-valid&quot; type=&quot;text&quot; placeholder=&quot;Text Input&quot;&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
 </div>
 
 
