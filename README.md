@@ -4,6 +4,7 @@ Sandbox for working with the Fabricator front end toolkit
 Includes:
 
 * Gulp
+* Bower
 * Foundation
 
 

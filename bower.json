@@ -1,0 +1,27 @@
+{
+  "name": "xg-fabricator",
+  "version": "0.0.0",
+  "homepage": "https://github.com/slowbot/xg-fabricator",
+  "authors": [
+    "menslow",
+    "slowbot"
+  ],
+  "description": "Exygy Pattern Library and Prototyping Toolkit",
+  "keywords": [
+    "exygy",
+    "pattern library",
+    "prototype"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "directory": "bower_components",
+  "devDependencies": {
+    "foundation": "~5.5.2"
+  }
+}
