@@ -68,37 +68,38 @@
 						<li>
 							<a href="atoms.html#button">Button</a>
 						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="components.html" class="f-menu__heading">Components</a>
-					<ul>
 						<li>
-							<a href="components.html#checkbox">Checkbox</a>
+							<a href="atoms.html#checkbox">Checkbox</a>
 						</li>
 						<li>
-							<a href="components.html#lists">Lists</a>
+							<a href="atoms.html#lists">Lists</a>
 						</li>
 						<li>
-							<a href="components.html#paragraph">Paragraph</a>
+							<a href="atoms.html#paragraph">Paragraph</a>
 						</li>
 						<li>
-							<a href="components.html#select">Select</a>
+							<a href="atoms.html#select">Select</a>
 						</li>
 						<li>
-							<a href="components.html#table">Table</a>
+							<a href="atoms.html#table">Table</a>
 						</li>
 						<li>
-							<a href="components.html#text-input">Text Input</a>
+							<a href="atoms.html#text-input">Text Input</a>
 						</li>
 						<li>
-							<a href="components.html#textarea">Textarea</a>
+							<a href="atoms.html#textarea">Textarea</a>
 						</li>
 					</ul>
 				</li>
 				<li>
 					<a href="molecules.html" class="f-menu__heading">Molecules</a>
 					<ul>
+						<li>
+							<a href="molecules.html#dropdown">Dropdown</a>
+						</li>
+						<li>
+							<a href="molecules.html#pagination">Pagination</a>
+						</li>
 						<li>
 							<a href="molecules.html#radio">Radio</a>
 						</li>
@@ -110,13 +111,8 @@
 						<li>
 							<a href="organisms.html#form">Form</a>
 						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="structures.html" class="f-menu__heading">Structures</a>
-					<ul>
 						<li>
-							<a href="structures.html#form">Form</a>
+							<a href="organisms.html#top-bar">Top Bar</a>
 						</li>
 					</ul>
 				</li>
@@ -158,10 +154,10 @@
 <h1 data-f-toggle="labels">Molecules</h1>
 
 
-<div class="f-item-group" id="radio">
+<div class="f-item-group" id="form">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Radio</h2>
+		<h2 class="f-item-heading">Form</h2>
 		<div class="f-item-controls">
 			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
@@ -172,30 +168,98 @@
 		</div>
 	</div>
 <div class="f-item-preview">
-	<label>
-	<input type="radio" name="groupName" id="radio1" /> Radio 1
-</label>
-
-<label>
-	<input type="radio" name="groupName" id="radio2" /> Radio 2
-</label>
-
-<label>
-	<input type="radio" name="groupName" id="radio3" /> Radio 3
-</label>
+	<form action="">
+	<div>
+		<label for="textInput">Text input</label>
+		<input type="text" id="textInput" /> </div>
+	<button class="button">Submit</button>
+</form>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label&gt;
-	&lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio1&quot; /&gt; Radio 1
-&lt;/label&gt;
+	<pre><code class="language-markup">&lt;form action=&quot;&quot;&gt;
+	&lt;div&gt;
+		&lt;label for=&quot;textInput&quot;&gt;Text input&lt;/label&gt;
+		&lt;input type=&quot;text&quot; id=&quot;textInput&quot; /&gt; &lt;/div&gt;
+	&lt;button class=&quot;button&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+</div>
 
-&lt;label&gt;
-	&lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio2&quot; /&gt; Radio 2
-&lt;/label&gt;
 
-&lt;label&gt;
-	&lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio3&quot; /&gt; Radio 3
-&lt;/label&gt;</code></pre>
+</div>
+
+
+<div class="f-item-group" id="top-bar">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Top Bar</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<nav class="top-bar" data-topbar role="navigation">
+	<ul class="title-area">
+		<li class="name">
+			<h1><a href="#">My Site</a></h1>
+		</li>
+		<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+		<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	</ul>
+
+	<section class="top-bar-section">
+		<!-- Right Nav Section -->
+		<ul class="right">
+			<li class="active"><a href="#">Right Button Active</a></li>
+			<li class="has-dropdown">
+				<a href="#">Right Button Dropdown</a>
+				<ul class="dropdown">
+					<li><a href="#">First link in dropdown</a></li>
+					<li class="active"><a href="#">Active link in dropdown</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<!-- Left Nav Section -->
+		<ul class="left">
+			<li><a href="#">Left Nav Button</a></li>
+		</ul>
+	</section>
+</nav>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;nav class=&quot;top-bar&quot; data-topbar role=&quot;navigation&quot;&gt;
+	&lt;ul class=&quot;title-area&quot;&gt;
+		&lt;li class=&quot;name&quot;&gt;
+			&lt;h1&gt;&lt;a href=&quot;#&quot;&gt;My Site&lt;/a&gt;&lt;/h1&gt;
+		&lt;/li&gt;
+		&lt;!-- Remove the class &quot;menu-icon&quot; to get rid of menu icon. Take out &quot;Menu&quot; to just have icon alone --&gt;
+		&lt;li class=&quot;toggle-topbar menu-icon&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+
+	&lt;section class=&quot;top-bar-section&quot;&gt;
+		&lt;!-- Right Nav Section --&gt;
+		&lt;ul class=&quot;right&quot;&gt;
+			&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Right Button Active&lt;/a&gt;&lt;/li&gt;
+			&lt;li class=&quot;has-dropdown&quot;&gt;
+				&lt;a href=&quot;#&quot;&gt;Right Button Dropdown&lt;/a&gt;
+				&lt;ul class=&quot;dropdown&quot;&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot;&gt;First link in dropdown&lt;/a&gt;&lt;/li&gt;
+					&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Active link in dropdown&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+
+		&lt;!-- Left Nav Section --&gt;
+		&lt;ul class=&quot;left&quot;&gt;
+			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Left Nav Button&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/section&gt;
+&lt;/nav&gt;</code></pre>
 </div>
 
 
