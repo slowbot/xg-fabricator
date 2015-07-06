@@ -25,7 +25,8 @@ pre[class*='language-'] {
   line-height: 1.4;
   direction: ltr;
   cursor: text;
-  letter-spacing: normal; }
+  letter-spacing: normal;
+  border-width: 0; }
 
 pre[class*='language-'] {
   overflow: auto;
