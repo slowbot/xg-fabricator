@@ -6627,6 +6627,26 @@ hr {
   background: #dedee0;
   margin: 2rem 0; }
 
+::-webkit-input-placeholder {
+  font-style: italic;
+  color: white;
+  font-weight: 100; }
+
+:-moz-placeholder {
+  font-style: italic;
+  color: white;
+  font-weight: 100; }
+
+::-moz-placeholder {
+  font-style: italic;
+  color: white;
+  font-weight: 100; }
+
+:-ms-input-placeholder {
+  font-style: italic;
+  color: white;
+  font-weight: 100; }
+
 .relative {
   position: relative; }
 
@@ -6965,6 +6985,62 @@ hr {
 
 .margin-top-none {
   margin-top: 0 !important; }
+
+.flag {
+  display: table;
+  width: 100%; }
+
+.flag-image,
+.flag-body {
+  display: table-cell;
+  vertical-align: middle; }
+  .flag--top .flag-image,
+  .flag--top .flag-body {
+    vertical-align: top; }
+  .flag--bottom .flag-image,
+  .flag--bottom .flag-body {
+    vertical-align: bottom; }
+
+.flag-image {
+  padding-right: 16px; }
+  .flag-image > img {
+    display: block;
+    max-width: none; }
+  .flag-rev .flag-image {
+    padding-right: 0;
+    padding-left: 10px; }
+
+.flag-body {
+  width: 100%; }
+
+.newsletter-form {
+  overflow: hidden;
+  *zoom: 1;
+  position: relative; }
+  .newsletter-form .newsletter-field {
+    position: relative; }
+  .newsletter-form .newsletter-input ::-webkit-input-placeholder {
+    font-weight: 600; }
+  .newsletter-form .newsletter-input :-moz-placeholder {
+    font-weight: 600; }
+  .newsletter-form .newsletter-input ::-moz-placeholder {
+    font-weight: 600; }
+  .newsletter-form .newsletter-input :-ms-input-placeholder {
+    font-weight: 600; }
+  .newsletter-form .newsletter-button {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .newsletter-form small.error {
+    background-color: transparent;
+    font-style: normal;
+    padding-left: 1rem;
+    padding-top: .75rem; }
+  .newsletter-form .error .newsletter-input {
+    font-weight: 700;
+    color: #f60; }
+  .newsletter-form .error label, .newsletter-form .error label.error {
+    color: #f60; }
 
 /**
  * Fabricator styles
