@@ -63,42 +63,56 @@
 				</li>
 		
 				<li>
-					<a href="components.html" class="f-menu__heading">Components</a>
+					<a href="atoms.html" class="f-menu__heading">Atoms</a>
 					<ul>
 						<li>
-							<a href="components.html#button">Button</a>
+							<a href="atoms.html#button">Button</a>
 						</li>
 						<li>
-							<a href="components.html#checkbox">Checkbox</a>
+							<a href="atoms.html#checkbox">Checkbox</a>
 						</li>
 						<li>
-							<a href="components.html#lists">Lists</a>
+							<a href="atoms.html#lists">Lists</a>
 						</li>
 						<li>
-							<a href="components.html#paragraph">Paragraph</a>
+							<a href="atoms.html#paragraph">Paragraph</a>
 						</li>
 						<li>
-							<a href="components.html#radio">Radio</a>
+							<a href="atoms.html#select">Select</a>
 						</li>
 						<li>
-							<a href="components.html#select">Select</a>
+							<a href="atoms.html#table">Table</a>
 						</li>
 						<li>
-							<a href="components.html#table">Table</a>
+							<a href="atoms.html#text-input">Text Input</a>
 						</li>
 						<li>
-							<a href="components.html#text-input">Text Input</a>
-						</li>
-						<li>
-							<a href="components.html#textarea">Textarea</a>
+							<a href="atoms.html#textarea">Textarea</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="structures.html" class="f-menu__heading">Structures</a>
+					<a href="molecules.html" class="f-menu__heading">Molecules</a>
 					<ul>
 						<li>
-							<a href="structures.html#form">Form</a>
+							<a href="molecules.html#dropdown">Dropdown</a>
+						</li>
+						<li>
+							<a href="molecules.html#pagination">Pagination</a>
+						</li>
+						<li>
+							<a href="molecules.html#radio">Radio</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="organisms.html" class="f-menu__heading">Organisms</a>
+					<ul>
+						<li>
+							<a href="organisms.html#form">Form</a>
+						</li>
+						<li>
+							<a href="organisms.html#top-bar">Top Bar</a>
 						</li>
 					</ul>
 				</li>
@@ -137,13 +151,13 @@
 
 
 	
-<h1 data-f-toggle="labels">Structures</h1>
+<h1 data-f-toggle="labels">Molecules</h1>
 
 
-<div class="f-item-group" id="form">
+<div class="f-item-group" id="dropdown">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Form</h2>
+		<h2 class="f-item-heading">Dropdown</h2>
 		<div class="f-item-controls">
 			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
@@ -154,20 +168,110 @@
 		</div>
 	</div>
 <div class="f-item-preview">
-	<form action="">
-	<div>
-		<label for="textInput">Text input</label>
-		<input type="text" id="textInput" /> </div>
-	<button class="button">Submit</button>
-</form>
+	<button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Dropdown Button</button>
+<br>
+<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+	<li><a href="#">This is a link</a></li>
+	<li><a href="#">This is another</a></li>
+	<li><a href="#">Yet another</a></li>
+</ul>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;form action=&quot;&quot;&gt;
-	&lt;div&gt;
-		&lt;label for=&quot;textInput&quot;&gt;Text input&lt;/label&gt;
-		&lt;input type=&quot;text&quot; id=&quot;textInput&quot; /&gt; &lt;/div&gt;
-	&lt;button class=&quot;button&quot;&gt;Submit&lt;/button&gt;
-&lt;/form&gt;</code></pre>
+	<pre><code class="language-markup">&lt;button href=&quot;#&quot; data-dropdown=&quot;drop1&quot; aria-controls=&quot;drop1&quot; aria-expanded=&quot;false&quot; class=&quot;button dropdown&quot;&gt;Dropdown Button&lt;/button&gt;
+&lt;br&gt;
+&lt;ul id=&quot;drop1&quot; data-dropdown-content class=&quot;f-dropdown&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;This is a link&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;This is another&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Yet another&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="pagination">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Pagination</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<ul class="pagination">
+	<li class="arrow unavailable"><a href="">&laquo;</a></li>
+	<li class="current"><a href="">1</a></li>
+	<li><a href="">2</a></li>
+	<li><a href="">3</a></li>
+	<li><a href="">4</a></li>
+	<li class="unavailable"><a href="">&hellip;</a></li>
+	<li><a href="">12</a></li>
+	<li><a href="">13</a></li>
+	<li class="arrow"><a href="">&raquo;</a></li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ul class=&quot;pagination&quot;&gt;
+	&lt;li class=&quot;arrow unavailable&quot;&gt;&lt;a href=&quot;&quot;&gt;&amp;laquo;&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;current&quot;&gt;&lt;a href=&quot;&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;unavailable&quot;&gt;&lt;a href=&quot;&quot;&gt;&amp;hellip;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;&quot;&gt;12&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;&quot;&gt;13&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;arrow&quot;&gt;&lt;a href=&quot;&quot;&gt;&amp;raquo;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="radio">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Radio</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<label>
+	<input type="radio" name="groupName" id="radio1" /> Radio 1
+</label>
+
+<label>
+	<input type="radio" name="groupName" id="radio2" /> Radio 2
+</label>
+
+<label>
+	<input type="radio" name="groupName" id="radio3" /> Radio 3
+</label>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;label&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio1&quot; /&gt; Radio 1
+&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio2&quot; /&gt; Radio 2
+&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio3&quot; /&gt; Radio 3
+&lt;/label&gt;</code></pre>
 </div>
 
 
