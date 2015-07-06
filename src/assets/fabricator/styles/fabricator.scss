@@ -40,11 +40,8 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
-/**
- * Fabricator styles
- * @author Luke Askew
- * Class selectors are namespaced with "f-"
- */
+@import "vendors/compass";
+@import "vendors/scut";
 
 @import "base/all";
 @import "utilities/all";
@@ -53,6 +50,12 @@
 @import "templates/all";
 @import "pages/all";
 
+/**
+ * Fabricator styles
+ * @author Luke Askew
+ * Class selectors are namespaced with "f-"
+ */
+ 
 @import 'patterns/variables';
 @import 'patterns/code';
 @import 'patterns/color-chips';

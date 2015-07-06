@@ -6537,11 +6537,6 @@ th.hide-for-touch {
   .show-for-print {
     display: none !important; } }
 
-/**
- * Fabricator styles
- * @author Luke Askew
- * Class selectors are namespaced with "f-"
- */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0; }
 
@@ -6971,6 +6966,11 @@ hr {
 .margin-top-none {
   margin-top: 0 !important; }
 
+/**
+ * Fabricator styles
+ * @author Luke Askew
+ * Class selectors are namespaced with "f-"
+ */
 /**
  * Github-like theme for Prism.js
  * @author Luke Askew http://github.com/lukeaskew
