@@ -1,0 +1,53 @@
+.newsletter-form {
+  @include clearfix;
+  position: relative;
+
+  .newsletter-field {
+    position: relative;
+  }
+
+  .newsletter-subscribe {
+
+  }
+
+  .newsletter-input {
+    @extend %border-box;
+
+    @include placeholder {
+      @include type-weight(semi);
+
+    }
+
+
+    &:active, &:focus {
+
+    }
+  }
+
+  .newsletter-button {
+    @include absolute(0,0,null,null);
+
+    .newsletter-button-link {
+
+    }
+  }
+
+  // error states
+  small.error {
+    background-color: transparent;
+    font-style: normal;
+    padding-left: 1rem;
+    padding-top: .75rem;
+  }
+
+  .error {    
+    .newsletter-input {
+      @include type-weight(bold);
+      color: $panic;
+    }
+    
+    label, label.error {
+      color: $panic;
+    }
+  }
+}

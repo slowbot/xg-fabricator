@@ -95,7 +95,13 @@
 					<a href="molecules.html" class="f-menu__heading">Molecules</a>
 					<ul>
 						<li>
+							<a href="molecules.html#alert-boxes">Alert Boxes</a>
+						</li>
+						<li>
 							<a href="molecules.html#dropdown">Dropdown</a>
+						</li>
+						<li>
+							<a href="molecules.html#form-subscribe">Form Subscribe</a>
 						</li>
 						<li>
 							<a href="molecules.html#pagination">Pagination</a>
@@ -110,6 +116,9 @@
 					<ul>
 						<li>
 							<a href="organisms.html#form">Form</a>
+						</li>
+						<li>
+							<a href="organisms.html#pagination">Pagination</a>
 						</li>
 						<li>
 							<a href="organisms.html#top-bar">Top Bar</a>
@@ -154,6 +163,76 @@
 <h1 data-f-toggle="labels">Molecules</h1>
 
 
+<div class="f-item-group" id="alert-boxes">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Alert Boxes</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div data-alert class="alert-box success radius">
+	This is a success alert with a radius.
+	<a href="#" class="close">&times;</a>
+</div>
+
+<div data-alert class="alert-box warning round">
+	This is a warning alert that is rounded.
+	<a href="#" class="close">&times;</a>
+</div>
+
+<div data-alert class="alert-box info radius">
+	This is an info alert with a radius.
+	<a href="#" class="close">&times;</a>
+</div>
+
+<div data-alert class="alert-box alert round">
+	This is an alert - alert that is rounded.
+	<a href="#" class="close">&times;</a>
+</div>
+
+<div data-alert class="alert-box secondary">
+	This is a secondary alert.
+	<a href="#" class="close">&times;</a>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div data-alert class=&quot;alert-box success radius&quot;&gt;
+	This is a success alert with a radius.
+	&lt;a href=&quot;#&quot; class=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div data-alert class=&quot;alert-box warning round&quot;&gt;
+	This is a warning alert that is rounded.
+	&lt;a href=&quot;#&quot; class=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div data-alert class=&quot;alert-box info radius&quot;&gt;
+	This is an info alert with a radius.
+	&lt;a href=&quot;#&quot; class=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div data-alert class=&quot;alert-box alert round&quot;&gt;
+	This is an alert - alert that is rounded.
+	&lt;a href=&quot;#&quot; class=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div data-alert class=&quot;alert-box secondary&quot;&gt;
+	This is a secondary alert.
+	&lt;a href=&quot;#&quot; class=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="dropdown">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -184,6 +263,48 @@
 	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;This is another&lt;/a&gt;&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Yet another&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="form-subscribe">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Form Subscribe</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="newsletter-form">
+	<div class="newsletter-field relative">
+		<label class="label-offset" for="newsletter"></label>
+		<input class="newsletter-input placeholder-tint" id="newsletter" placeholder="Email your email address" type="text">
+	</div>
+
+	<div class="newsletter-button">
+		<button class="newsletter-button-link postfix c-white caps bold" href="#">Subscribe</button>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;newsletter-form&quot;&gt;
+	&lt;div class=&quot;newsletter-field relative&quot;&gt;
+		&lt;label class=&quot;label-offset&quot; for=&quot;newsletter&quot;&gt;&lt;/label&gt;
+		&lt;input class=&quot;newsletter-input placeholder-tint&quot; id=&quot;newsletter&quot; placeholder=&quot;Email your email address&quot; type=&quot;text&quot;&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;newsletter-button&quot;&gt;
+		&lt;button class=&quot;newsletter-button-link postfix c-white caps bold&quot; href=&quot;#&quot;&gt;Subscribe&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 
