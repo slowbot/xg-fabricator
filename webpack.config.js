@@ -24,6 +24,9 @@ module.exports = function(fabricatorConfig) {
 			]
 		},
 		plugins: [],
+		resolve: {
+			modulesDirectories: ['node_modules', 'bower_components']
+		},
 		cache: {}
 	};
 
