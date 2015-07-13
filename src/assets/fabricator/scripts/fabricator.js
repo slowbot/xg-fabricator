@@ -373,5 +373,4 @@ fabricator.setInitialMenuState = function () {
 		.buildColorChips()
 		.setActiveItem()
 		.bindCodeAutoSelect();
-
 }());
