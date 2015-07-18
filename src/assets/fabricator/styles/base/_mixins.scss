@@ -4,9 +4,3 @@
   ::-moz-placeholder          {@content}
   :-ms-input-placeholder      {@content}  
 }
-
-@include placeholder {
-    font-style:italic;
-    color: white;
-    font-weight:100;
-}

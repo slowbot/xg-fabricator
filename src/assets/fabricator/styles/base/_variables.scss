@@ -20,7 +20,8 @@ $sans-font-family-semibold: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", He
 $sans-font-family-bold: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $alt-font-family: $sans-font-family-bold;
 $serif-font-family: "freight-text-pro", Georgia, Times, serif;
-$fancy-serif-font-family: "FarnhamdisplaySwashalt", Georgia, Times, serif;
+$fancy-serif-font-family: "Hoefler Text A", "Hoefler Text B", Georgia, Times, serif;
+// $fancy-serif-font-family: "Hoefler Titling A", "Hoefler Titling B", Georgia, Times, serif;
 
 $font-weight-normal: 400;
 $type-weight: (
@@ -210,47 +211,9 @@ $fieldset-padding: 0;
 /* Buttons */
 
 // Button colors.
-$base-button-color:     #fff !default;
-$base-button-bg:        #0074d9 !default;
-$btn-primary-border:    darken($base-button-bg, 5%) !default;
-
-%button {
-  -webkit-font-smoothing: antialiased;
-  letter-spacing: 0 !important;
-  display: inline-block;
-  font-weight: bold;
-  font-size: .8125rem !important;
-  line-height: 1;
-  padding: .75em 1em;
-  text-decoration: none;
-  white-space: nowrap;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-/* Default Button */
-@import "vendors/buttons/mixins";
-@include button;
-
-/* Flat Theme */
-@include button-flat;
-
-/* Ghost themes */
-@include button_ghost;
-@include button_ghost_light;
-
-/* 3d Theme */
-@include button_3d;
-
-/* Blockbreak */
-.btn, .btn-flat, .btn-ghost, .btn-ghost-light, .btn-3d {
-  @include blockbreak;
-}
-
-// Sizes
-.btn-s { font-size: 12px; }
-.btn-m { font-size: 18px; }
-.btn-l { font-size: 20px; }
+$base-button-color:     #fff;
+$base-button-bg:        #0074d9;
+$btn-primary-border:    darken($base-button-bg, 5%);
 
 // Border radius.
 .radius {border-radius: .3em;}

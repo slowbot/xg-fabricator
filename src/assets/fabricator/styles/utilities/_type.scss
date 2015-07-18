@@ -51,7 +51,9 @@ $align-class-breakpoints:
 }
 
 .serif {
-  font-family:$serif-font-family;
+  @include type-weight('regular');
+  font-family:$fancy-serif-font-family;
+  font-style: italic;
 }
 
 .sans {

@@ -44,3 +44,11 @@
     }
   }
 }
+
+.btn-ghost {
+  @each $color-name, $color-value in $colors {
+    &-#{"" + $color-name} {
+      background-color: $color-value !important;
+    }
+  }
+}

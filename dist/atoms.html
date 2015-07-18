@@ -69,7 +69,7 @@
 					<a href="atoms.html" class="f-menu__heading">Atoms</a>
 					<ul>
 						<li>
-							<a href="atoms.html#button">Button</a>
+							<a href="atoms.html#buttons">Buttons</a>
 						</li>
 						<li>
 							<a href="atoms.html#checkbox">Checkbox</a>
@@ -82,6 +82,9 @@
 						</li>
 						<li>
 							<a href="atoms.html#select">Select</a>
+						</li>
+						<li>
+							<a href="atoms.html#svg">Svg</a>
 						</li>
 						<li>
 							<a href="atoms.html#table">Table</a>
@@ -136,6 +139,9 @@
 					<a href="pages.html" class="f-menu__heading">Pages</a>
 					<ul>
 						<li>
+							<a href="pages/design.html">Design</a>
+						</li>
+						<li>
 							<a href="pages/home.html">Home</a>
 						</li>
 					</ul>
@@ -168,33 +174,66 @@
 <h1 data-f-toggle="labels">Atoms</h1>
 
 
-<div class="f-item-group" id="button">
+<div class="f-item-group" id="buttons">
 
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Button</h2>
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div><div class="f-item-notes" data-f-toggle="notes">
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Buttons</h2>
+	</div>
+		<div class="f-item-group" id="buttons.base">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Base</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>These are notes associated with this <code>button</code> component.</p>
 
 </div>
 <div class="f-item-preview">
 	<button class="btn-ghost">Submit</button>
+<button class="btn-ghost">Submit</button>
+<button class="btn-ghost">Submit</button>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;btn-ghost&quot;&gt;Submit&lt;/button&gt;</code></pre>
+	<pre><code class="language-markup">&lt;button class=&quot;btn-ghost&quot;&gt;Submit&lt;/button&gt;
+&lt;button class=&quot;btn-ghost&quot;&gt;Submit&lt;/button&gt;
+&lt;button class=&quot;btn-ghost&quot;&gt;Submit&lt;/button&gt;</code></pre>
 </div>
 
+		</div>
+		<div class="f-item-group" id="buttons.solid">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Solid</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<button class="btn btn-primary">Submit</button>
+<button class="btn btn-secondary">Submit</button>
+<button class="btn btn-primary">Submit</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+&lt;button class=&quot;btn btn-secondary&quot;&gt;Submit&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
 
 </div>
 
@@ -306,12 +345,10 @@
 		</div>
 	</div>
 <div class="f-item-preview">
-	<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-	nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
+	<p>Exygy is a full-service technology partner for mission-driven organizations. Our services cover every stage of the innovation cycle, from ideation and concept development to design/build to impact evaluation.</p>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;p&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-	nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;</code></pre>
+	<pre><code class="language-markup">&lt;p&gt;Exygy is a full-service technology partner for mission-driven organizations. Our services cover every stage of the innovation cycle, from ideation and concept development to design/build to impact evaluation.&lt;/p&gt;</code></pre>
 </div>
 
 
@@ -350,6 +387,61 @@
 &lt;/select&gt;</code></pre>
 </div>
 
+
+</div>
+
+
+<div class="f-item-group" id="svg">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Svg</h2>
+	</div>
+		<div class="f-item-group" id="svg.logo">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Logo</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 146.3 41.1" enable-background="new 0 0 146.3 41.1" xml:space="preserve">
+	<g>
+		<path d="M0,33.3V0h25.1v6.5H7.3v6.8H23v6.5H7.3v7h18.1v6.5H0z" />
+		<path d="M47.9,33.3l-5.1-8l-5.1,8H30l9-13L30.3,7.8h7.8l4.8,7.4l4.8-7.4h7.6l-8.6,12.4l9,13.1H47.9z" />
+		<path d="M76,34c-2,5.2-4,7.1-8.4,7.1c-2.6,0-4.6-0.7-6.4-1.8l2.4-5.2c1,0.6,2.1,1,3.1,1c1.2,0,1.9-0.4,2.5-1.7
+    l-10-25.6h7.7l5.8,17.4l5.6-17.4h7.5L76,34z" />
+		<path d="M100.3,41.1c-4.1,0-8-1-11.3-2.7l2.5-5.4c2.6,1.5,5.2,2.3,8.6,2.3c5,0,7.3-2.4,7.3-7v-1.2
+    c-2.1,2.6-4.5,4.1-8.3,4.1c-6,0-11.3-4.3-11.3-11.9v-0.1c0-7.6,5.5-11.9,11.3-11.9c4,0,6.3,1.7,8.2,3.8V7.8h7.2v19.8
+    C114.5,37.2,109.8,41.1,100.3,41.1z M107.4,19.2c0-3.5-2.7-5.9-6.2-5.9c-3.5,0-6.2,2.4-6.2,5.9v0.1c0,3.5,2.7,5.9,6.2,5.9
+    C104.7,25.2,107.4,22.8,107.4,19.2L107.4,19.2z" />
+		<path d="M136.5,34c-2,5.2-4,7.1-8.4,7.1c-2.6,0-4.6-0.7-6.4-1.8l2.4-5.2c1,0.6,2.1,1,3.1,1c1.2,0,1.9-0.4,2.5-1.7
+    l-10-25.6h7.7l5.8,17.4l5.6-17.4h7.5L136.5,34z" />
+	</g>
+</svg>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 146.3 41.1&quot; enable-background=&quot;new 0 0 146.3 41.1&quot; xml:space=&quot;preserve&quot;&gt;
+	&lt;g&gt;
+		&lt;path d=&quot;M0,33.3V0h25.1v6.5H7.3v6.8H23v6.5H7.3v7h18.1v6.5H0z&quot; /&gt;
+		&lt;path d=&quot;M47.9,33.3l-5.1-8l-5.1,8H30l9-13L30.3,7.8h7.8l4.8,7.4l4.8-7.4h7.6l-8.6,12.4l9,13.1H47.9z&quot; /&gt;
+		&lt;path d=&quot;M76,34c-2,5.2-4,7.1-8.4,7.1c-2.6,0-4.6-0.7-6.4-1.8l2.4-5.2c1,0.6,2.1,1,3.1,1c1.2,0,1.9-0.4,2.5-1.7
+    l-10-25.6h7.7l5.8,17.4l5.6-17.4h7.5L76,34z&quot; /&gt;
+		&lt;path d=&quot;M100.3,41.1c-4.1,0-8-1-11.3-2.7l2.5-5.4c2.6,1.5,5.2,2.3,8.6,2.3c5,0,7.3-2.4,7.3-7v-1.2
+    c-2.1,2.6-4.5,4.1-8.3,4.1c-6,0-11.3-4.3-11.3-11.9v-0.1c0-7.6,5.5-11.9,11.3-11.9c4,0,6.3,1.7,8.2,3.8V7.8h7.2v19.8
+    C114.5,37.2,109.8,41.1,100.3,41.1z M107.4,19.2c0-3.5-2.7-5.9-6.2-5.9c-3.5,0-6.2,2.4-6.2,5.9v0.1c0,3.5,2.7,5.9,6.2,5.9
+    C104.7,25.2,107.4,22.8,107.4,19.2L107.4,19.2z&quot; /&gt;
+		&lt;path d=&quot;M136.5,34c-2,5.2-4,7.1-8.4,7.1c-2.6,0-4.6-0.7-6.4-1.8l2.4-5.2c1,0.6,2.1,1,3.1,1c1.2,0,1.9-0.4,2.5-1.7
+    l-10-25.6h7.7l5.8,17.4l5.6-17.4h7.5L136.5,34z&quot; /&gt;
+	&lt;/g&gt;
+&lt;/svg&gt;</code></pre>
+</div>
+
+		</div>
 
 </div>
 
