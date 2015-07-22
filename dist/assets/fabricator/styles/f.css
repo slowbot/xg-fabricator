@@ -3737,6 +3737,23 @@ th.hide-for-touch {
 .radius {
   border-radius: .3em; }
 
+.feat-quote .quote-entry p:after,
+.feat-quote .quote-entry p:before {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: inline-block;
+  content: '';
+  width: 1.5rem;
+  height: 2rem; }
+
+.feat-quote .quote-entry p:before {
+  vertical-align: top;
+  margin-right: 1rem; }
+
+.feat-quote .quote-entry p:after {
+  vertical-align: bottom;
+  margin-left: 1rem; }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 1rem; }
@@ -4160,35 +4177,35 @@ form {
   box-sizing: border-box; }
 
 @media screen and (min-width: 30.063em) {
-  .padding, .padding-top {
+  .padding, .padding-top, .footer-top .form-subscribe {
     padding-top: 16px !important; } }
 
 @media screen and (max-width: 30.063em) {
-  .padding, .padding-top {
+  .padding, .padding-top, .footer-top .form-subscribe {
     padding-top: 16px !important; } }
 
 @media screen and (min-width: 30.063em) {
-  .padding, .padding-right {
+  .padding, .padding-right, .footer-top .footer-label {
     padding-right: 16px !important; } }
 
 @media screen and (max-width: 30.063em) {
-  .padding, .padding-right {
+  .padding, .padding-right, .footer-top .footer-label {
     padding-right: 16px !important; } }
 
 @media screen and (min-width: 30.063em) {
-  .padding, .padding-bottom {
+  .padding, .padding-bottom, .footer-top .form-subscribe {
     padding-bottom: 16px !important; } }
 
 @media screen and (max-width: 30.063em) {
-  .padding, .padding-bottom {
+  .padding, .padding-bottom, .footer-top .form-subscribe {
     padding-bottom: 16px !important; } }
 
 @media screen and (min-width: 30.063em) {
-  .padding, .padding-left {
+  .padding, .padding-left, .footer-top .footer-label {
     padding-left: 16px !important; } }
 
 @media screen and (max-width: 30.063em) {
-  .padding, .padding-left {
+  .padding, .padding-left, .footer-top .footer-label {
     padding-left: 16px !important; } }
 
 @media screen and (min-width: 30.063em) {
@@ -4256,35 +4273,35 @@ form {
     padding-left: 16px !important; } }
 
 @media screen and (min-width: 30.063em) {
-  .padding--3halvesx, .padding-top--3halvesx {
+  .padding--3halves, .padding-top--3halves {
     padding-top: 24px !important; } }
 
 @media screen and (max-width: 30.063em) {
-  .padding--3halvesx, .padding-top--3halvesx {
+  .padding--3halves, .padding-top--3halves {
     padding-top: 16px !important; } }
 
 @media screen and (min-width: 30.063em) {
-  .padding--3halvesx, .padding-right--3halvesx {
+  .padding--3halves, .padding-right--3halves {
     padding-right: 24px !important; } }
 
 @media screen and (max-width: 30.063em) {
-  .padding--3halvesx, .padding-right--3halvesx {
+  .padding--3halves, .padding-right--3halves {
     padding-right: 16px !important; } }
 
 @media screen and (min-width: 30.063em) {
-  .padding--3halvesx, .padding-bottom--3halvesx {
+  .padding--3halves, .padding-bottom--3halves {
     padding-bottom: 24px !important; } }
 
 @media screen and (max-width: 30.063em) {
-  .padding--3halvesx, .padding-bottom--3halvesx {
+  .padding--3halves, .padding-bottom--3halves {
     padding-bottom: 16px !important; } }
 
 @media screen and (min-width: 30.063em) {
-  .padding--3halvesx, .padding-left--3halvesx {
+  .padding--3halves, .padding-left--3halves {
     padding-left: 24px !important; } }
 
 @media screen and (max-width: 30.063em) {
-  .padding--3halvesx, .padding-left--3halvesx {
+  .padding--3halves, .padding-left--3halves {
     padding-left: 16px !important; } }
 
 .padding--half, .padding-top--half {
@@ -4364,35 +4381,35 @@ form {
     margin-left: 16px !important; } }
 
 @media screen and (min-width: 30.063em) {
-  .margin--3halvesx, .margin-top--3halvesx {
+  .margin--3halves, .margin-top--3halves {
     margin-top: 24px !important; } }
 
 @media screen and (max-width: 30.063em) {
-  .margin--3halvesx, .margin-top--3halvesx {
+  .margin--3halves, .margin-top--3halves {
     margin-top: 16px !important; } }
 
 @media screen and (min-width: 30.063em) {
-  .margin--3halvesx, .margin-right--3halvesx {
+  .margin--3halves, .margin-right--3halves {
     margin-right: 24px !important; } }
 
 @media screen and (max-width: 30.063em) {
-  .margin--3halvesx, .margin-right--3halvesx {
+  .margin--3halves, .margin-right--3halves {
     margin-right: 16px !important; } }
 
 @media screen and (min-width: 30.063em) {
-  .margin--3halvesx, .margin-bottom--3halvesx {
+  .margin--3halves, .margin-bottom--3halves {
     margin-bottom: 24px !important; } }
 
 @media screen and (max-width: 30.063em) {
-  .margin--3halvesx, .margin-bottom--3halvesx {
+  .margin--3halves, .margin-bottom--3halves {
     margin-bottom: 16px !important; } }
 
 @media screen and (min-width: 30.063em) {
-  .margin--3halvesx, .margin-left--3halvesx {
+  .margin--3halves, .margin-left--3halves {
     margin-left: 24px !important; } }
 
 @media screen and (max-width: 30.063em) {
-  .margin--3halvesx, .margin-left--3halvesx {
+  .margin--3halves, .margin-left--3halves {
     margin-left: 16px !important; } }
 
 .margin--half, .margin-top--half {
@@ -5025,34 +5042,47 @@ form {
 .flag-body {
   width: 100%; }
 
-.newsletter-form {
-  overflow: hidden;
-  *zoom: 1;
-  position: relative; }
-  .newsletter-form .newsletter-field {
-    position: relative; }
-  .newsletter-form .newsletter-input ::-webkit-input-placeholder {
-    font-weight: 600; }
-  .newsletter-form .newsletter-input :-moz-placeholder {
-    font-weight: 600; }
-  .newsletter-form .newsletter-input ::-moz-placeholder {
-    font-weight: 600; }
-  .newsletter-form .newsletter-input :-ms-input-placeholder {
-    font-weight: 600; }
-  .newsletter-form .newsletter-button {
-    position: absolute;
-    top: 0;
-    right: 0; }
-  .newsletter-form small.error {
-    background-color: transparent;
-    font-style: normal;
-    padding-left: 1rem;
-    padding-top: .75rem; }
-  .newsletter-form .error .newsletter-input {
-    font-weight: 700;
-    color: #f60; }
-  .newsletter-form .error label, .newsletter-form .error label.error {
-    color: #f60; }
+.footer-top {
+  background: #5fb8c5;
+  position: relative;
+  text-align: center; }
+  .footer-top .footer-label {
+    color: #fff;
+    display: inline-block;
+    font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    vertical-align: middle; }
+  .footer-top .footer-label strong {
+    font-weight: 400; }
+  .footer-top .form-subscribe {
+    display: inline-block;
+    vertical-align: middle; }
+    .footer-top .form-subscribe form {
+      margin: 0; }
+
+.footer-subscribe {
+  text-align: center; }
+  .footer-subscribe ::-webkit-input-placeholder {
+    color: #fff; }
+  .footer-subscribe :-moz-placeholder {
+    color: #fff; }
+  .footer-subscribe ::-moz-placeholder {
+    color: #fff; }
+  .footer-subscribe :-ms-input-placeholder {
+    color: #fff; }
+  .footer-subscribe input[type="text"],
+  .footer-subscribe input[type="email"] {
+    background: #90ced7;
+    border: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    width: 100%;
+    height: 2.8125rem;
+    margin: 0; }
+  .footer-subscribe input[type="submit"] {
+    display: none; }
 
 .off-canvas-wrap {
   -webkit-backface-visibility: hidden;
@@ -5458,30 +5488,14 @@ ul.off-canvas-list {
 
 .section-feat-quote {
   background: url(images/quote-bg.jpg) no-repeat 0 0;
-  background-color: #333;
   background-size: cover;
-  padding: 3rem 1rem 2rem;
+  background-color: #333;
   color: #fff;
   text-align: center; }
 
 .feat-quote .quote-entry {
   font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
-  font-weight: 300;
-  padding-bottom: 1.5rem; }
-  .feat-quote .quote-entry p:after,
-  .feat-quote .quote-entry p:before {
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    display: inline-block;
-    content: '';
-    width: 1.5rem;
-    height: 2rem; }
-  .feat-quote .quote-entry p:before {
-    vertical-align: top;
-    margin-right: 1rem; }
-  .feat-quote .quote-entry p:after {
-    vertical-align: bottom;
-    margin-left: 1rem; }
+  font-weight: 300; }
 
 .feat-quote .author {
   font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif; }

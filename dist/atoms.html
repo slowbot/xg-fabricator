@@ -75,10 +75,22 @@
 							<a href="atoms.html#checkbox">Checkbox</a>
 						</li>
 						<li>
+							<a href="atoms.html#dropdown">Dropdown</a>
+						</li>
+						<li>
+							<a href="atoms.html#form-subscribe">Form Subscribe</a>
+						</li>
+						<li>
 							<a href="atoms.html#lists">Lists</a>
 						</li>
 						<li>
+							<a href="atoms.html#pagination">Pagination</a>
+						</li>
+						<li>
 							<a href="atoms.html#paragraph">Paragraph</a>
+						</li>
+						<li>
+							<a href="atoms.html#radio">Radio</a>
 						</li>
 						<li>
 							<a href="atoms.html#select">Select</a>
@@ -101,25 +113,13 @@
 					<a href="molecules.html" class="f-menu__heading">Molecules</a>
 					<ul>
 						<li>
-							<a href="molecules.html#dropdown">Dropdown</a>
-						</li>
-						<li>
 							<a href="molecules.html#featured-quote">Featured Quote</a>
 						</li>
 						<li>
-							<a href="molecules.html#form-subscribe">Form Subscribe</a>
-						</li>
-						<li>
-							<a href="molecules.html#pagination">Pagination</a>
-						</li>
-						<li>
-							<a href="molecules.html#radio">Radio</a>
+							<a href="molecules.html#footer-top">Footer Top</a>
 						</li>
 						<li>
 							<a href="molecules.html#section-call">Section Call</a>
-						</li>
-						<li>
-							<a href="molecules.html#section-footer-top">Section Footer Top</a>
 						</li>
 						<li>
 							<a href="molecules.html#section-head">Section Head</a>
@@ -131,9 +131,6 @@
 					<ul>
 						<li>
 							<a href="organisms.html#form">Form</a>
-						</li>
-						<li>
-							<a href="organisms.html#pagination">Pagination</a>
 						</li>
 						<li>
 							<a href="organisms.html#top-bar">Top Bar</a>
@@ -272,6 +269,84 @@
 </div>
 
 
+<div class="f-item-group" id="dropdown">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Dropdown</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Dropdown Button</button>
+<br>
+<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+	<li><a href="#">This is a link</a></li>
+	<li><a href="#">This is another</a></li>
+	<li><a href="#">Yet another</a></li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button href=&quot;#&quot; data-dropdown=&quot;drop1&quot; aria-controls=&quot;drop1&quot; aria-expanded=&quot;false&quot; class=&quot;button dropdown&quot;&gt;Dropdown Button&lt;/button&gt;
+&lt;br&gt;
+&lt;ul id=&quot;drop1&quot; data-dropdown-content class=&quot;f-dropdown&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;This is a link&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;This is another&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Yet another&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="form-subscribe">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Form Subscribe</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="newsletter-form">
+	<div class="newsletter-field relative">
+		<label class="label-offset" for="newsletter"></label>
+		<input class="newsletter-input placeholder-tint" id="newsletter" placeholder="Email your email address" type="text">
+	</div>
+
+	<div class="newsletter-button">
+		<button class="newsletter-button-link postfix c-white caps bold" href="#">Subscribe</button>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;newsletter-form&quot;&gt;
+	&lt;div class=&quot;newsletter-field relative&quot;&gt;
+		&lt;label class=&quot;label-offset&quot; for=&quot;newsletter&quot;&gt;&lt;/label&gt;
+		&lt;input class=&quot;newsletter-input placeholder-tint&quot; id=&quot;newsletter&quot; placeholder=&quot;Email your email address&quot; type=&quot;text&quot;&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;newsletter-button&quot;&gt;
+		&lt;button class=&quot;newsletter-button-link postfix c-white caps bold&quot; href=&quot;#&quot;&gt;Subscribe&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="lists">
 
 	<div class="f-item-heading-group">
@@ -337,6 +412,50 @@
 </div>
 
 
+<div class="f-item-group" id="pagination">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Pagination</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<ul class="pagination">
+	<li class="arrow unavailable"><a href="">&laquo;</a></li>
+	<li class="current"><a href="">1</a></li>
+	<li><a href="">2</a></li>
+	<li><a href="">3</a></li>
+	<li><a href="">4</a></li>
+	<li class="unavailable"><a href="">&hellip;</a></li>
+	<li><a href="">12</a></li>
+	<li><a href="">13</a></li>
+	<li class="arrow"><a href="">&raquo;</a></li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ul class=&quot;pagination&quot;&gt;
+	&lt;li class=&quot;arrow unavailable&quot;&gt;&lt;a href=&quot;&quot;&gt;&amp;laquo;&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;current&quot;&gt;&lt;a href=&quot;&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;unavailable&quot;&gt;&lt;a href=&quot;&quot;&gt;&amp;hellip;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;&quot;&gt;12&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;&quot;&gt;13&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;arrow&quot;&gt;&lt;a href=&quot;&quot;&gt;&amp;raquo;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="paragraph">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -355,6 +474,50 @@
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;p&gt;Exygy is a full-service technology partner for mission-driven organizations. Our services cover every stage of the innovation cycle, from ideation and concept development to design/build to impact evaluation.&lt;/p&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="radio">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Radio</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<label>
+	<input type="radio" name="groupName" id="radio1" /> Radio 1
+</label>
+
+<label>
+	<input type="radio" name="groupName" id="radio2" /> Radio 2
+</label>
+
+<label>
+	<input type="radio" name="groupName" id="radio3" /> Radio 3
+</label>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;label&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio1&quot; /&gt; Radio 1
+&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio2&quot; /&gt; Radio 2
+&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio3&quot; /&gt; Radio 3
+&lt;/label&gt;</code></pre>
 </div>
 
 

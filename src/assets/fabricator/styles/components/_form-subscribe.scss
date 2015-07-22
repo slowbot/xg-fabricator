@@ -1,53 +1,73 @@
-.newsletter-form {
-  @include clearfix;
-  position: relative;
-
-  .newsletter-field {
-    position: relative;
-  }
-
-  .newsletter-subscribe {
-
-  }
-
-  .newsletter-input {
-    @extend %border-box;
-
-    @include placeholder {
-      @include type-weight(semi);
-
-    }
-
-
-    &:active, &:focus {
-
-    }
-  }
-
-  .newsletter-button {
-    @include absolute(0,0,null,null);
-
-    .newsletter-button-link {
-
-    }
-  }
-
-  // error states
-  small.error {
-    background-color: transparent;
-    font-style: normal;
-    padding-left: 1rem;
-    padding-top: .75rem;
-  }
-
-  .error {    
-    .newsletter-input {
-      @include type-weight(bold);
-      color: $panic;
-    }
+.footer-top { 
+  background: #5fb8c5; 
+  position: relative; 
+  text-align: center; 
+  
+  .footer-label { 
+    color: #fff; 
+    display: inline-block; 
+    font-family: $font-family;
+    vertical-align: middle; 
+    // padding: 0 20px;
+    // font: 300 20px/24px 'Gotham'; 
+    @extend %padding-left;
+    @extend %padding-right;
     
-    label, label.error {
-      color: $panic;
+  }
+
+  .footer-label strong { 
+    font-weight: 400; 
+  }
+
+  .form-subscribe { 
+    display: inline-block; 
+    vertical-align: middle; 
+    // width: 526px; 
+    // padding: 17px 0; 
+    @extend %padding-top;
+    @extend %padding-bottom;
+
+    form {
+      margin: 0;
     }
+  }
+
+  .footer-widget { 
+    // padding: 17px 0; 
   }
 }
+
+.footer-subscribe { 
+  @include placeholder {
+    color: #fff;
+  }
+    
+  text-align: center; 
+
+  input[type="text"], 
+  input[type="email"] { 
+    background: #90ced7; 
+    border: 0; 
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff; 
+    display: block; 
+    font-family: $font-family;
+    width: 100%; 
+    height: rem-calc(45); 
+    margin: 0;
+    // padding: 10px 20px; 
+    // font-size: 20px; 
+    // font: 300 20px/25px 'Gotham';
+  }
+
+  input[type="submit"] { 
+    display: none; 
+  }
+}  
+
+
+// .form-subscribe ::-webkit-input-placeholder { color: #fff; }
+// .form-subscribe :-moz-placeholder { color: #fff; }
+// .form-subscribe ::-moz-placeholder { color: #fff; }
+// .form-subscribe ::-ms-input-placeholder { color: #fff; }
