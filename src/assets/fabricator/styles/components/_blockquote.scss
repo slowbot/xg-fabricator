@@ -1,0 +1,19 @@
+.section-feat-quote { 
+  background: url(images/quote-bg.jpg) no-repeat 0 0;
+  background-size: cover; 
+  background-color: #333;
+  color: #fff;
+  text-align: center; 
+}
+
+.feat-quote {
+  .quote-entry {
+    font-family: $font-family;
+    font-weight: 300; 
+    @extend %quotemarks;
+  }
+
+  .author { 
+    font-family: $font-family;
+  }
+}
