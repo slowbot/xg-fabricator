@@ -13,7 +13,7 @@
 		font-family: $font-family;
 		color: #45464b; 
 
-		@media #{$medium-up} {
+		@media #{$large-up} {
 			@include grid-column(9);
 		}	
 	}
@@ -26,7 +26,7 @@
 	}
 
 	.section-actions { 
-		@media #{$medium-up} {
+		@media #{$large-up} {
 			@include grid-column(3);
 		}
 		
