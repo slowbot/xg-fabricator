@@ -167,12 +167,13 @@ $column-gutter: rem-calc(30);
 $small-top: 30em;
 $medium-bottom: 30.063em;
 $medium-top: 64em;
+$large-bottom: 64.063em;
 $large-top: 90em;
 $xlarge-top: 120em;
 
 $small-range: (0, $small-top);
 $medium-range: ($medium-bottom, $medium-top);
-$large-range: (64.063em, $large-top);
+$large-range: ($large-bottom, $large-top);
 $xlarge-range: (90.063em, $xlarge-top);
 $xxlarge-range: (120.063em, 99999999em);
 
@@ -194,8 +195,8 @@ $xxlarge-range: (120.063em, 99999999em);
 
 $breakpoints: (
   small:    $small-top,
-  medium:   $medium-top,
-  large:    $large-top,
+  medium:   $medium-bottom,
+  large:    $large-bottom,
   x-large:  $xlarge-top
 );
 

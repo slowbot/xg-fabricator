@@ -3762,7 +3762,7 @@ h1,
 .alpha {
   font-size: 2.125rem;
   line-height: 1.25; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 30.063em) {
     h1,
     .alpha {
       font-size: 3rem;
@@ -3770,9 +3770,14 @@ h1,
 
 h2,
 .beta {
-  font-size: 1.75rem;
+  font-size: 1.425rem;
   line-height: 1.25; }
-  @media screen and (min-width: 90em) {
+  @media screen and (min-width: 30.063em) {
+    h2,
+    .beta {
+      font-size: 1.25rem;
+      line-height: 1.75; } }
+  @media screen and (min-width: 64.063em) {
     h2,
     .beta {
       font-size: 1.75rem;
@@ -3780,9 +3785,14 @@ h2,
 
 h3,
 .gamma {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.25; }
-  @media screen and (min-width: 90em) {
+  @media screen and (min-width: 30.063em) {
+    h3,
+    .gamma {
+      font-size: 1.125rem;
+      line-height: 1.5; } }
+  @media screen and (min-width: 64.063em) {
     h3,
     .gamma {
       font-size: 1.5rem;
@@ -3790,14 +3800,14 @@ h3,
 
 h4,
 .delta {
-  font-size: 1.25rem;
-  line-height: 1.25; }
-  @media screen and (min-width: 64em) {
+  font-size: 1.125rem;
+  line-height: 1.425; }
+  @media screen and (min-width: 30.063em) {
     h4,
     .delta {
       font-size: 1.35rem;
       line-height: 1.25; } }
-  @media screen and (min-width: 90em) {
+  @media screen and (min-width: 64.063em) {
     h4,
     .delta {
       font-size: 1.5rem;
@@ -3810,13 +3820,13 @@ h5,
 
 h6,
 .base {
-  font-size: 0.95;
+  font-size: 0.825rem;
   line-height: 1.5; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 30.063em) {
     h6,
     .base {
-      font-size: 1rem;
-      line-height: 1.375; } }
+      font-size: 0.875rem;
+      line-height: 1.5; } }
 
 small,
 .small {
@@ -5570,6 +5580,16 @@ ul.off-canvas-list {
     text-indent: -4000px;
     -webkit-transition: none !important;
             transition: none !important; }
+
+.play-section-head {
+  color: #4f5a62;
+  margin-top: 2rem; }
+  @media only screen and (min-width: 30.063em) {
+    .play-section-head {
+      margin-top: 3rem; } }
+  @media only screen and (min-width: 64.063em) {
+    .play-section-head {
+      margin-top: 2rem; } }
 
 .nav-mobile {
   display: block !important;
