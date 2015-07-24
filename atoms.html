@@ -1,0 +1,869 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7282032/769428/css/fonts.css" />
+	
+	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
+
+	<!-- toolkit styles -->
+	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
+	<link rel="stylesheet" href="/assets/toolkit/styles/toolkit.css">
+	<!-- /toolkit styles -->
+
+</head>
+<body>
+
+		<!-- fabricator icons -->
+		<svg style="display: none;">
+			<symbol id="f-icon-code" viewBox="0 0 512 512">
+				<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
+			</symbol>
+			<symbol id="f-icon-notes" viewBox="0 0 512 512">
+				<path d="M443.8 0H68.2C30.6 0 0 30.5 0 68v264.2c0 16.6 8.9 29.5 25.9 37.5 15.3 7.2 33.1 8.4 40.1 8.5V512l201.6-134h176.1c37.6 0 68.2-30.3 68.2-67.8V68c.1-37.5-30.5-68-68.1-68zM114 438V330H68.2c-11.1 0-19.2-8.8-19.2-19.8V68c0-11 8.2-20 19.2-20h375.5c11.1 0 19.2 9 19.2 20v242.2c0 11-8.2 19.8-19.2 19.8H244.2L114 438z"/>
+			</symbol>
+			<symbol id="f-icon-labels" viewBox="0 0 512 512">
+				<path d="M304 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM464 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM144 280c0 13.2-10.8 24-24 24H72c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48z"/>
+			</symbol>
+			<symbol id="f-icon-menu" viewBox="0 0 512 512">
+				<path d="M512 100c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 212c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 324c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 436c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24z"/>
+			</symbol>
+			<symbol id="f-icon-settings" viewBox="0 0 512 512">
+				<path d="M256 377.3c-67.5 0-121.6-53.9-121.6-121.3s54-121.3 121.6-121.3S377.6 188.6 377.6 256 323.5 377.3 256 377.3zm0-215.6c-52.7 0-94.6 41.8-94.6 94.3s41.9 94.3 94.6 94.3 94.6-41.8 94.6-94.3-41.9-94.3-94.6-94.3zM293.2 512h-72.9L200 450c-13.5-4-27-9.4-39.2-16.2l-59.4 29.6L50 412.3 79.7 353c-6.8-12.1-12.2-25.6-16.2-39.1L0 292.4v-72.8l62.1-20.2c4.1-13.5 9.5-26.9 16.2-39.1L48.6 101 100 49.9l59.4 29.6c12.2-6.7 25.7-12.1 39.2-16.2L220.2 0h72.9l20.3 62c13.5 4 27 9.4 39.2 16.2L412 48.5l51.3 51.2-29.7 59.3c6.8 12.1 12.2 25.6 16.2 39.1l62.1 20.2V291l-62.1 20.2c-4.1 13.5-9.5 26.9-16.2 39.1l29.7 59.3-51.3 51.2-59.4-29.6c-12.2 6.7-25.7 12.1-39.2 16.2L293.2 512zm-54.1-26.9h35.1l18.9-57.9 6.8-1.3c16.2-4 31.1-10.8 45.9-18.9l6.8-4 54 26.9 24.3-24.3-27-53.9 4.1-6.7c8.1-13.5 14.9-29.6 18.9-45.8l1.4-6.7 58.1-18.9v-35l-58.1-18.9-1.4-6.7c-4.1-16.2-10.8-31-18.9-45.8l-4.1-6.7 27-53.9-24.3-24.3-54 26.9-6.8-4c-14.8-8.2-29.7-14.9-45.9-19l-6.8-1.3L274.2 27h-35.1l-18.9 57.9-6.8 1.3c-16.2 4-31.1 10.8-45.9 18.9l-6.8 4-54-26.9-24.3 24.3 27 53.9-4.1 6.7c-8.1 13.5-14.9 29.6-18.9 45.8l-1.4 6.7-58 18.9v35l58.1 18.9 1.4 6.7c4.1 16.2 10.8 31 18.9 45.8l4.1 6.7-27 53.9 24.3 24.3 54-26.9 6.8 4c14.9 8.1 29.7 14.8 45.9 18.9l6.8 1.3 18.8 58z"/>
+			</symbol>
+		</svg>
+		<!-- /fabricator icons -->
+		<!-- fabricator menu -->
+		<div class="f-menu">
+		
+			<div class="f-controls">
+				<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
+					<svg>
+						<use xlink:href="#f-icon-labels" />
+					</svg>
+				</div>
+				<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
+					<svg>
+						<use xlink:href="#f-icon-notes" />
+					</svg>
+				</div>
+				<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
+					<svg>
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</div>
+			</div>
+		
+			<ul>
+		
+				<li>
+					<a href="index.html" class="f-menu__heading">Overview</a>
+				</li>
+		
+				<li>
+					<a href="atoms.html" class="f-menu__heading">Atoms</a>
+					<ul>
+						<li>
+							<a href="atoms.html#buttons">Buttons</a>
+						</li>
+						<li>
+							<a href="atoms.html#checkbox">Checkbox</a>
+						</li>
+						<li>
+							<a href="atoms.html#dropdown">Dropdown</a>
+						</li>
+						<li>
+							<a href="atoms.html#form-subscribe">Form Subscribe</a>
+						</li>
+						<li>
+							<a href="atoms.html#lists">Lists</a>
+						</li>
+						<li>
+							<a href="atoms.html#pagination">Pagination</a>
+						</li>
+						<li>
+							<a href="atoms.html#paragraph">Paragraph</a>
+						</li>
+						<li>
+							<a href="atoms.html#radio">Radio</a>
+						</li>
+						<li>
+							<a href="atoms.html#select">Select</a>
+						</li>
+						<li>
+							<a href="atoms.html#svg">Svg</a>
+						</li>
+						<li>
+							<a href="atoms.html#table">Table</a>
+						</li>
+						<li>
+							<a href="atoms.html#text-input">Text Input</a>
+						</li>
+						<li>
+							<a href="atoms.html#textarea">Textarea</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="molecules.html" class="f-menu__heading">Molecules</a>
+					<ul>
+						<li>
+							<a href="molecules.html#featured-quote">Featured Quote</a>
+						</li>
+						<li>
+							<a href="molecules.html#footer-top">Footer Top</a>
+						</li>
+						<li>
+							<a href="molecules.html#section-call">Section Call</a>
+						</li>
+						<li>
+							<a href="molecules.html#section-head">Section Head</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="organisms.html" class="f-menu__heading">Organisms</a>
+					<ul>
+						<li>
+							<a href="organisms.html#form">Form</a>
+						</li>
+						<li>
+							<a href="organisms.html#nav">Nav</a>
+						</li>
+						<li>
+							<a href="organisms.html#nav-mobile">Nav Mobile</a>
+						</li>
+						<li>
+							<a href="organisms.html#top-bar">Top Bar</a>
+						</li>
+					</ul>
+				</li>
+		
+				<li>
+					<a href="pages.html" class="f-menu__heading">Pages</a>
+					<ul>
+						<li>
+							<a href="pages/design.html">Design</a>
+						</li>
+						<li>
+							<a href="pages/home.html">Home</a>
+						</li>
+					</ul>
+				</li>
+		
+				<li>
+					<a href="docs.html" class="f-menu__heading">Docs</a>
+					<ul>
+						<li>
+							<a href="docs.html#javascript">Javascript</a>
+						</li>
+					</ul>
+				</li>
+		
+			</ul>
+		
+		
+		</div>
+		<!-- /fabricator menu -->
+		<div class="f-container">
+			<div class="f-control-bar">
+				<div class="f-control f-menu-toggle">
+					<svg>
+						<use xlink:href="#f-icon-menu" />
+					</svg>
+				</div>
+			</div>
+
+	
+<h1 data-f-toggle="labels">Atoms</h1>
+
+
+<div class="f-item-group" id="buttons">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Buttons</h2>
+	</div>
+		<div class="f-item-group" id="buttons.base">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Base</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg>
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>These are notes associated with this <code>button</code> component.</p>
+
+</div>
+<div class="f-item-preview">
+	<button class="btn-ghost">Submit</button>
+<button class="btn-ghost">Submit</button>
+<button class="btn-ghost">Submit</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class=&quot;btn-ghost&quot;&gt;Submit&lt;/button&gt;
+&lt;button class=&quot;btn-ghost&quot;&gt;Submit&lt;/button&gt;
+&lt;button class=&quot;btn-ghost&quot;&gt;Submit&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.solid">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Solid</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<button class="btn btn-primary">Submit</button>
+<button class="btn btn-secondary">Submit</button>
+<button class="btn btn-primary">Submit</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+&lt;button class=&quot;btn btn-secondary&quot;&gt;Submit&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="checkbox">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Checkbox</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<label>
+	<input type="checkbox" /> Checkbox
+</label>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;label&gt;
+	&lt;input type=&quot;checkbox&quot; /&gt; Checkbox
+&lt;/label&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="dropdown">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Dropdown</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Dropdown Button</button>
+<br>
+<ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+	<li><a href="#">This is a link</a></li>
+	<li><a href="#">This is another</a></li>
+	<li><a href="#">Yet another</a></li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button href=&quot;#&quot; data-dropdown=&quot;drop1&quot; aria-controls=&quot;drop1&quot; aria-expanded=&quot;false&quot; class=&quot;button dropdown&quot;&gt;Dropdown Button&lt;/button&gt;
+&lt;br&gt;
+&lt;ul id=&quot;drop1&quot; data-dropdown-content class=&quot;f-dropdown&quot; aria-hidden=&quot;true&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;This is a link&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;This is another&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Yet another&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="form-subscribe">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Form Subscribe</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="newsletter-form">
+	<div class="newsletter-field relative">
+		<label class="label-offset" for="newsletter"></label>
+		<input class="newsletter-input placeholder-tint" id="newsletter" placeholder="Email your email address" type="text">
+	</div>
+
+	<div class="newsletter-button">
+		<button class="newsletter-button-link postfix c-white caps bold" href="#">Subscribe</button>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;newsletter-form&quot;&gt;
+	&lt;div class=&quot;newsletter-field relative&quot;&gt;
+		&lt;label class=&quot;label-offset&quot; for=&quot;newsletter&quot;&gt;&lt;/label&gt;
+		&lt;input class=&quot;newsletter-input placeholder-tint&quot; id=&quot;newsletter&quot; placeholder=&quot;Email your email address&quot; type=&quot;text&quot;&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;newsletter-button&quot;&gt;
+		&lt;button class=&quot;newsletter-button-link postfix c-white caps bold&quot; href=&quot;#&quot;&gt;Subscribe&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="lists">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Lists</h2>
+	</div>
+		<div class="f-item-group" id="lists.ordered">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Ordered</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<ol>
+	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+	<li>Aliquam tincidunt mauris eu risus.</li>
+	<li>Vestibulum auctor dapibus neque.</li>
+</ol>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ol&gt;
+	&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+	&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+	&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="lists.unordered">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Unordered</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<ul>
+	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+	<li>Aliquam tincidunt mauris eu risus.</li>
+	<li>Vestibulum auctor dapibus neque.</li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ul&gt;
+	&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+	&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+	&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="pagination">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Pagination</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<ul class="pagination">
+	<li class="arrow unavailable"><a href="">&laquo;</a></li>
+	<li class="current"><a href="">1</a></li>
+	<li><a href="">2</a></li>
+	<li><a href="">3</a></li>
+	<li><a href="">4</a></li>
+	<li class="unavailable"><a href="">&hellip;</a></li>
+	<li><a href="">12</a></li>
+	<li><a href="">13</a></li>
+	<li class="arrow"><a href="">&raquo;</a></li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ul class=&quot;pagination&quot;&gt;
+	&lt;li class=&quot;arrow unavailable&quot;&gt;&lt;a href=&quot;&quot;&gt;&amp;laquo;&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;current&quot;&gt;&lt;a href=&quot;&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;unavailable&quot;&gt;&lt;a href=&quot;&quot;&gt;&amp;hellip;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;&quot;&gt;12&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;&quot;&gt;13&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;arrow&quot;&gt;&lt;a href=&quot;&quot;&gt;&amp;raquo;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="paragraph">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Paragraph</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<p>Exygy is a full-service technology partner for mission-driven organizations. Our services cover every stage of the innovation cycle, from ideation and concept development to design/build to impact evaluation.</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;p&gt;Exygy is a full-service technology partner for mission-driven organizations. Our services cover every stage of the innovation cycle, from ideation and concept development to design/build to impact evaluation.&lt;/p&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="radio">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Radio</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<label>
+	<input type="radio" name="groupName" id="radio1" /> Radio 1
+</label>
+
+<label>
+	<input type="radio" name="groupName" id="radio2" /> Radio 2
+</label>
+
+<label>
+	<input type="radio" name="groupName" id="radio3" /> Radio 3
+</label>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;label&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio1&quot; /&gt; Radio 1
+&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio2&quot; /&gt; Radio 2
+&lt;/label&gt;
+
+&lt;label&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio3&quot; /&gt; Radio 3
+&lt;/label&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="select">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Select</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<select name="" id="">
+	<option value="">Option 1</option>
+	<option value="">Option 2</option>
+	<option value="">Option 3</option>
+	<option value="">Option 4</option>
+	<option value="">Option 5</option>
+</select>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;select name=&quot;&quot; id=&quot;&quot;&gt;
+	&lt;option value=&quot;&quot;&gt;Option 1&lt;/option&gt;
+	&lt;option value=&quot;&quot;&gt;Option 2&lt;/option&gt;
+	&lt;option value=&quot;&quot;&gt;Option 3&lt;/option&gt;
+	&lt;option value=&quot;&quot;&gt;Option 4&lt;/option&gt;
+	&lt;option value=&quot;&quot;&gt;Option 5&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="svg">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Svg</h2>
+	</div>
+		<div class="f-item-group" id="svg.logo">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Logo</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 146.3 41.1" enable-background="new 0 0 146.3 41.1" xml:space="preserve">
+	<g>
+		<path d="M0,33.3V0h25.1v6.5H7.3v6.8H23v6.5H7.3v7h18.1v6.5H0z" />
+		<path d="M47.9,33.3l-5.1-8l-5.1,8H30l9-13L30.3,7.8h7.8l4.8,7.4l4.8-7.4h7.6l-8.6,12.4l9,13.1H47.9z" />
+		<path d="M76,34c-2,5.2-4,7.1-8.4,7.1c-2.6,0-4.6-0.7-6.4-1.8l2.4-5.2c1,0.6,2.1,1,3.1,1c1.2,0,1.9-0.4,2.5-1.7
+    l-10-25.6h7.7l5.8,17.4l5.6-17.4h7.5L76,34z" />
+		<path d="M100.3,41.1c-4.1,0-8-1-11.3-2.7l2.5-5.4c2.6,1.5,5.2,2.3,8.6,2.3c5,0,7.3-2.4,7.3-7v-1.2
+    c-2.1,2.6-4.5,4.1-8.3,4.1c-6,0-11.3-4.3-11.3-11.9v-0.1c0-7.6,5.5-11.9,11.3-11.9c4,0,6.3,1.7,8.2,3.8V7.8h7.2v19.8
+    C114.5,37.2,109.8,41.1,100.3,41.1z M107.4,19.2c0-3.5-2.7-5.9-6.2-5.9c-3.5,0-6.2,2.4-6.2,5.9v0.1c0,3.5,2.7,5.9,6.2,5.9
+    C104.7,25.2,107.4,22.8,107.4,19.2L107.4,19.2z" />
+		<path d="M136.5,34c-2,5.2-4,7.1-8.4,7.1c-2.6,0-4.6-0.7-6.4-1.8l2.4-5.2c1,0.6,2.1,1,3.1,1c1.2,0,1.9-0.4,2.5-1.7
+    l-10-25.6h7.7l5.8,17.4l5.6-17.4h7.5L136.5,34z" />
+	</g>
+</svg>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 146.3 41.1&quot; enable-background=&quot;new 0 0 146.3 41.1&quot; xml:space=&quot;preserve&quot;&gt;
+	&lt;g&gt;
+		&lt;path d=&quot;M0,33.3V0h25.1v6.5H7.3v6.8H23v6.5H7.3v7h18.1v6.5H0z&quot; /&gt;
+		&lt;path d=&quot;M47.9,33.3l-5.1-8l-5.1,8H30l9-13L30.3,7.8h7.8l4.8,7.4l4.8-7.4h7.6l-8.6,12.4l9,13.1H47.9z&quot; /&gt;
+		&lt;path d=&quot;M76,34c-2,5.2-4,7.1-8.4,7.1c-2.6,0-4.6-0.7-6.4-1.8l2.4-5.2c1,0.6,2.1,1,3.1,1c1.2,0,1.9-0.4,2.5-1.7
+    l-10-25.6h7.7l5.8,17.4l5.6-17.4h7.5L76,34z&quot; /&gt;
+		&lt;path d=&quot;M100.3,41.1c-4.1,0-8-1-11.3-2.7l2.5-5.4c2.6,1.5,5.2,2.3,8.6,2.3c5,0,7.3-2.4,7.3-7v-1.2
+    c-2.1,2.6-4.5,4.1-8.3,4.1c-6,0-11.3-4.3-11.3-11.9v-0.1c0-7.6,5.5-11.9,11.3-11.9c4,0,6.3,1.7,8.2,3.8V7.8h7.2v19.8
+    C114.5,37.2,109.8,41.1,100.3,41.1z M107.4,19.2c0-3.5-2.7-5.9-6.2-5.9c-3.5,0-6.2,2.4-6.2,5.9v0.1c0,3.5,2.7,5.9,6.2,5.9
+    C104.7,25.2,107.4,22.8,107.4,19.2L107.4,19.2z&quot; /&gt;
+		&lt;path d=&quot;M136.5,34c-2,5.2-4,7.1-8.4,7.1c-2.6,0-4.6-0.7-6.4-1.8l2.4-5.2c1,0.6,2.1,1,3.1,1c1.2,0,1.9-0.4,2.5-1.7
+    l-10-25.6h7.7l5.8,17.4l5.6-17.4h7.5L136.5,34z&quot; /&gt;
+	&lt;/g&gt;
+&lt;/svg&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="table">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Table</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<table>
+	<thead>
+		<tr>
+			<th>Table Heading 1</th>
+			<th>Table Heading 2</th>
+			<th>Table Heading 3</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th>Table Footer 1</th>
+			<th>Table Footer 2</th>
+			<th>Table Footer 3</th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td>Table Cell 1</td>
+			<td>Table Cell 2</td>
+			<td>Table Cell 3</td>
+		</tr>
+		<tr>
+			<td>Table Cell 1</td>
+			<td>Table Cell 2</td>
+			<td>Table Cell 3</td>
+		</tr>
+		<tr>
+			<td>Table Cell 1</td>
+			<td>Table Cell 2</td>
+			<td>Table Cell 3</td>
+		</tr>
+		<tr>
+			<td>Table Cell 1</td>
+			<td>Table Cell 2</td>
+			<td>Table Cell 3</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;table&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Table Heading 1&lt;/th&gt;
+			&lt;th&gt;Table Heading 2&lt;/th&gt;
+			&lt;th&gt;Table Heading 3&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tfoot&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Table Footer 1&lt;/th&gt;
+			&lt;th&gt;Table Footer 2&lt;/th&gt;
+			&lt;th&gt;Table Footer 3&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/tfoot&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Table Cell 1&lt;/td&gt;
+			&lt;td&gt;Table Cell 2&lt;/td&gt;
+			&lt;td&gt;Table Cell 3&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Table Cell 1&lt;/td&gt;
+			&lt;td&gt;Table Cell 2&lt;/td&gt;
+			&lt;td&gt;Table Cell 3&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Table Cell 1&lt;/td&gt;
+			&lt;td&gt;Table Cell 2&lt;/td&gt;
+			&lt;td&gt;Table Cell 3&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Table Cell 1&lt;/td&gt;
+			&lt;td&gt;Table Cell 2&lt;/td&gt;
+			&lt;td&gt;Table Cell 3&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="text-input">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Text Input</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<fieldset>
+	<div class="field-container">
+		<label for="text">Text Input <abbr title="Required">*</abbr>
+			<input id="text" type="text" placeholder="Text Input">
+		</label>
+	</div>
+	<div class="field-container">
+		<label for="password">Password</label>
+		<input id="password" type="password" placeholder="Type your Password" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
+	</div>
+	<div class="field-container">
+		<label for="webaddress">Web Address
+			<input id="webaddress" type="url" placeholder="http://yoursite.com">
+		</label>
+	</div>
+	<div class="field-container">
+		<label for="emailaddress">Email Address
+			<input id="emailaddress" type="email" placeholder="name@email.com">
+		</label>
+	</div>
+	<div class="field-container">
+		<label for="search">Search
+			<input id="search" type="search" placeholder="Enter Search Term">
+		</label>
+	</div>
+	<div class="field-container">
+		<label for="text">Number Input <abbr title="Required">*</abbr>
+			<input id="text" type="number" placeholder="Enter a Number" pattern="[0-9]*">
+		</label>
+	</div>
+	<div class="field-container">
+		<label for="textarea">Textarea
+			<textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+		</label>
+	</div>
+	<div class="field-container">
+		<label class="error">Error Input
+			<input class="is-error" type="text" placeholder="Text Input">
+		</label>
+	</div>
+	<div class="field-container">
+		<label class="valid">Valid
+			<input class="is-valid" type="text" placeholder="Text Input">
+		</label>
+	</div>
+</fieldset>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;fieldset&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label for=&quot;text&quot;&gt;Text Input &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;
+			&lt;input id=&quot;text&quot; type=&quot;text&quot; placeholder=&quot;Text Input&quot;&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+		&lt;input id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Type your Password&quot; style=&quot;background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label for=&quot;webaddress&quot;&gt;Web Address
+			&lt;input id=&quot;webaddress&quot; type=&quot;url&quot; placeholder=&quot;http://yoursite.com&quot;&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label for=&quot;emailaddress&quot;&gt;Email Address
+			&lt;input id=&quot;emailaddress&quot; type=&quot;email&quot; placeholder=&quot;name@email.com&quot;&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label for=&quot;search&quot;&gt;Search
+			&lt;input id=&quot;search&quot; type=&quot;search&quot; placeholder=&quot;Enter Search Term&quot;&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label for=&quot;text&quot;&gt;Number Input &lt;abbr title=&quot;Required&quot;&gt;*&lt;/abbr&gt;
+			&lt;input id=&quot;text&quot; type=&quot;number&quot; placeholder=&quot;Enter a Number&quot; pattern=&quot;[0-9]*&quot;&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label for=&quot;textarea&quot;&gt;Textarea
+			&lt;textarea id=&quot;textarea&quot; rows=&quot;8&quot; cols=&quot;48&quot; placeholder=&quot;Enter your message here&quot;&gt;&lt;/textarea&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label class=&quot;error&quot;&gt;Error Input
+			&lt;input class=&quot;is-error&quot; type=&quot;text&quot; placeholder=&quot;Text Input&quot;&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;
+		&lt;label class=&quot;valid&quot;&gt;Valid
+			&lt;input class=&quot;is-valid&quot; type=&quot;text&quot; placeholder=&quot;Text Input&quot;&gt;
+		&lt;/label&gt;
+	&lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="textarea">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Textarea</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<textarea name="" id="" cols="30" rows="10"></textarea>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;textarea name=&quot;&quot; id=&quot;&quot; cols=&quot;30&quot; rows=&quot;10&quot;&gt;&lt;/textarea&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+
+		</div>
+	<script src="/assets/fabricator/scripts/f.js"></script>
+
+	<!-- toolkit scripts -->
+	<script src="/assets/toolkit/scripts/toolkit.js"></script>
+	<!-- /toolkit scripts -->
+
+</body>
+</html>
