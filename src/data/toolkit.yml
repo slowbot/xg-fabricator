@@ -1,8 +1,0 @@
-colors:
-  primary:
-    Dark: "rgb(60, 64, 67)"
-    Light: "rgb(242, 246, 247)"
-  secondary:
-    Bright: "rgb(247, 105, 46)"
-    Vibrant: "rgb(252, 207, 80)"
-    Cool: "rgb(95, 184, 197)"
